@@ -19,7 +19,7 @@ export default async function autoDownloadModel(
 	}
 
 	try {
-		const modelDirectory = path.join(projectDir, 'whisper.cpp', 'models')
+		const modelDirectory = path.join(__dirname, '..', './whisper.cpp', 'models')
 		shell.cd(modelDirectory)
 		const modelAlreadyExist = fs.existsSync(path.join(modelDirectory, autoDownloadModelName))
 

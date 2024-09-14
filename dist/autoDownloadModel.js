@@ -27,7 +27,7 @@ function autoDownloadModel(autoDownloadModelName_1, verbose_1) {
             throw new Error('[Nodejs-whisper] Error: Provide a valid model name');
         }
         try {
-            const modelDirectory = path_1.default.join(projectDir, 'whisper.cpp', 'models');
+            const modelDirectory = path_1.default.join(__dirname, '..', './whisper.cpp', 'models');
             shelljs_1.default.cd(modelDirectory);
             const modelAlreadyExist = fs_1.default.existsSync(path_1.default.join(modelDirectory, autoDownloadModelName));
             if (modelAlreadyExist) {
