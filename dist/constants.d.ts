@@ -1,0 +1,27 @@
+export declare const MODELS_LIST: string[];
+export declare const MODELS: string[];
+export declare const MODEL_OBJECT: {
+    tiny: string;
+    'tiny.en': string;
+    'tiny-q5_1': string;
+    'tiny.en-q5_1': string;
+    base: string;
+    'base.en': string;
+    'base-q5_1': string;
+    'base.en-q5_1': string;
+    small: string;
+    'small.en': string;
+    'small.en-tdrz': string;
+    'small-q5_1': string;
+    'small.en-q5_1': string;
+    medium: string;
+    'medium.en': string;
+    'medium-q5_0': string;
+    'medium.en-q5_0': string;
+    'large-v1': string;
+    'large-v2': string;
+    'large-v2-q5_0': string;
+    'large-v3': string;
+    'large-v3-q5_0': string;
+};
+export declare const DEFAULT_MODEL = "tiny.en";
